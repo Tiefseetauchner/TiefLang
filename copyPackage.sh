@@ -19,7 +19,6 @@ copyPackage() {
         "README.md"
         "LICENSE"
         "lib.typ"
-        "thumbnail.png"
         "core/"
     )
 
