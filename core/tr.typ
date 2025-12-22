@@ -1,7 +1,7 @@
 #import "state.typ": current-lang-stack, default-lang, is-strict-mode-enabled, stored-translations
 
 #let get-translations = namespace => (
-  stored-translations.get().at(namespace).at(current-lang-stack.get().first(default: default-lang.get()))
+  stored-translations.get().at(namespace).at(current-lang-stack.get().first(default: default-lang.get().at(namespace)))
 )
 
 #let resolve-key = key => key.split(".")
