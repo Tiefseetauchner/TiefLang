@@ -73,6 +73,8 @@ Access your translations using the `tr` command:
 
 That is the basic usecase, probably enough for most templates. `trk()` works identically to `tr(key)`, the latter being syntactic sugar.
 
+Note that `tr` and `trk` require a context around them, as they access current context.
+
 ## User facing
 
 You have two options when it comes to user facing APIs. Either expose a `lang` parameter in your template and call `push-lang(lang)` or instruct the user to select their language using the `push-lang`/`select-lang` methods (these are currently aliases).
